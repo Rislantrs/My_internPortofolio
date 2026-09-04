@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   const essentialLinks = [
@@ -127,6 +128,7 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-400">
             <a href="#profile" className="hover:text-slate-100 transition-colors">Profil</a>
             <a href="#links" className="hover:text-slate-100 transition-colors">Tautan Penting</a>
+            <a href="#contact" className="hover:text-slate-100 transition-colors">Kirim Pesan</a>
             <a href="#skills" className="hover:text-slate-100 transition-colors">Keahlian</a>
             <a href="#capstone" className="hover:text-slate-100 transition-colors">Capstone</a>
             <a href="#articles" className="hover:text-slate-100 transition-colors">Artikel</a>
@@ -287,11 +289,16 @@ export default function Home() {
           </div>
         </section>
 
+        {/* 2. KIRIM PESAN LANGSUNG (DYNAMIC FEATURE VIA WEB3FORMS) */}
+        <section id="contact" className="scroll-mt-24">
+          <ContactForm />
+        </section>
+
         {/* 3. KEAHLIAN & FOKUS TEKNOLOGI */}
         <section id="skills" className="scroll-mt-24">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1 border-b border-slate-800 pb-4">
-              <span className="text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold">02 / Technical Skills</span>
+              <span className="text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold">03 / Technical Skills</span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Keahlian & Fokus yang Dibangun</h2>
               <p className="text-sm text-slate-400">
                 Teknologi, metodologi, dan standar sistem yang secara konsisten saya pelajari dan terapkan dalam berbagai proyek nyata.
@@ -325,7 +332,7 @@ export default function Home() {
         <section id="capstone" className="scroll-mt-24">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1 border-b border-slate-800 pb-4">
-              <span className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold">03 / Future Project</span>
+              <span className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold">04 / Future Project</span>
               <div className="flex items-center justify-between flex-wrap gap-2">
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Proyek Masa Depan (Capstone Project)</h2>
                 <span className="text-xs px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 font-medium">
@@ -384,7 +391,7 @@ export default function Home() {
         <section id="articles" className="scroll-mt-24">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1 border-b border-slate-800 pb-4">
-              <span className="text-rose-400 font-mono text-xs uppercase tracking-wider font-semibold">04 / Writings & Publications</span>
+              <span className="text-rose-400 font-mono text-xs uppercase tracking-wider font-semibold">05 / Writings & Publications</span>
               <div className="flex items-center justify-between flex-wrap gap-2">
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Artikel & Tulisan Teknis</h2>
                 <a
