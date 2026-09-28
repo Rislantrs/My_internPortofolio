@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -6,15 +6,27 @@ const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
+  preload: true,
 });
 
 const mono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
   display: "swap",
+  preload: false,
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#020617",
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://my-internportofolio.pages.dev"),
+  alternates: {
+    canonical: "/",
+  },
   title: "M Rislan Tristansyah | Intern Portfolio & Creative Developer",
   description:
     "Official single-page intern portfolio of M Rislan Tristansyah - Telecommunication Systems student at Universitas Pendidikan Indonesia focusing on AI, Cloud Computing, Networking, and Web Engineering.",
@@ -34,7 +46,7 @@ export const metadata: Metadata = {
     title: "M Rislan Tristansyah | Intern Portfolio & Creative Developer",
     description:
       "Telecommunication Systems student at UPI focused on Artificial Intelligence, Cloud Computing, Networking, and Modern Web Engineering.",
-    url: "https://www.rislantrs.me",
+    url: "https://my-internportofolio.pages.dev",
     siteName: "Rislan Portfolio",
     locale: "id_ID",
     type: "website",

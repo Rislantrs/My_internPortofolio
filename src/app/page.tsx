@@ -118,26 +118,27 @@ export default function Home() {
       {/* Header / Navbar */}
       <header className="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-          <a href="#hero" className="flex items-center gap-2.5 font-bold tracking-tight text-slate-100 hover:text-cyan-400 transition-colors">
+          <a href="#profile" className="flex items-center gap-2.5 font-bold tracking-tight text-slate-100 hover:text-cyan-400 transition-colors">
             <span className="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 font-mono text-sm font-black">
               R
             </span>
             <span>M Rislan Tristansyah</span>
           </a>
 
-          <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-400">
-            <a href="#profile" className="hover:text-slate-100 transition-colors">Profil</a>
-            <a href="#links" className="hover:text-slate-100 transition-colors">Tautan Penting</a>
-            <a href="#contact" className="hover:text-slate-100 transition-colors">Kirim Pesan</a>
-            <a href="#skills" className="hover:text-slate-100 transition-colors">Keahlian</a>
-            <a href="#capstone" className="hover:text-slate-100 transition-colors">Capstone</a>
-            <a href="#articles" className="hover:text-slate-100 transition-colors">Artikel</a>
+          <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+            <a href="#profile" className="hover:text-white transition-colors">Profil</a>
+            <a href="#links" className="hover:text-white transition-colors">Tautan Penting</a>
+            <a href="#contact" className="hover:text-white transition-colors">Kirim Pesan</a>
+            <a href="#skills" className="hover:text-white transition-colors">Keahlian</a>
+            <a href="#capstone" className="hover:text-white transition-colors">Capstone</a>
+            <a href="#articles" className="hover:text-white transition-colors">Artikel</a>
           </nav>
 
           <a
             href="https://calendly.com/rislantristansyah"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Book a call on Calendly"
             className="text-xs sm:text-sm font-semibold px-3.5 py-1.5 rounded-lg bg-cyan-500 text-slate-950 hover:bg-cyan-400 transition-colors shadow-sm shadow-cyan-500/20 flex items-center gap-1.5"
           >
             <span>Book a Call</span>
@@ -171,13 +172,13 @@ export default function Home() {
                 <p className="text-lg sm:text-xl font-medium text-cyan-400">
                   Creative Developer & AI Enthusiast • Telecommunication Systems Student
                 </p>
-                <p className="text-sm sm:text-base text-slate-400">
+                <p className="text-sm sm:text-base text-slate-300">
                   Universitas Pendidikan Indonesia (UPI) • Semester 7
                 </p>
               </div>
 
               {/* Bio Description */}
-              <div className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-3xl space-y-3 border-t border-slate-800/80 pt-5">
+              <div className="text-slate-200 text-sm sm:text-base leading-relaxed max-w-3xl space-y-3 border-t border-slate-800/80 pt-5">
                 <p>
                   Saya adalah mahasiswa tingkat akhir di program studi <strong>Sistem Telekomunikasi, Universitas Pendidikan Indonesia</strong> dengan fokus riset dan ketertarikan mendalam pada bidang <strong>Kecerdasan Buatan (Artificial Intelligence)</strong>, jaringan komputasi awan (Cloud Computing), serta pengembangan aplikasi web modern yang bersih dan efisien.
                 </p>
@@ -201,7 +202,7 @@ export default function Home() {
                   href="https://www.rislantrs.me/assets/M%20Rislan%20Tristansyah-resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-slate-200 font-semibold text-sm border border-slate-700 transition-colors inline-flex items-center gap-2"
+                  className="px-4 py-2 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-slate-100 font-semibold text-sm border border-slate-700 transition-colors inline-flex items-center gap-2"
                 >
                   <svg className="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -219,7 +220,7 @@ export default function Home() {
             <div className="flex flex-col gap-1 border-b border-slate-800 pb-4">
               <span className="text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold">01 / Connection Hub</span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Tautan Penting & Kontak</h2>
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-slate-300">
                 Pintu masuk utama untuk melihat rekam jejak profesional, kode sumber, dokumen kurikulum vitae, dan jadwal konsultasi.
               </p>
             </div>
@@ -248,7 +249,7 @@ export default function Home() {
                       <h3 className="text-lg font-bold text-slate-100 group-hover:text-cyan-300 transition-colors">
                         {item.title}
                       </h3>
-                      <p className="text-xs text-slate-400 font-mono mt-0.5">{item.label}</p>
+                      <p className="text-xs text-slate-300 font-mono mt-0.5">{item.label}</p>
                     </div>
 
                     <p className="text-sm text-slate-300 leading-relaxed">
@@ -278,7 +279,7 @@ export default function Home() {
                 >
                   <div className="min-w-0 pr-2">
                     <p className="text-xs font-bold text-slate-200 group-hover:text-cyan-300 truncate">{link.title}</p>
-                    <p className="text-[11px] text-slate-400 truncate">{link.role}</p>
+                    <p className="text-[11px] text-slate-300 truncate">{link.role}</p>
                   </div>
                   <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700 shrink-0">
                     {link.badge}
@@ -289,7 +290,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 2. KIRIM PESAN LANGSUNG (DYNAMIC FEATURE VIA WEB3FORMS) */}
+        {/* 2B. KIRIM PESAN LANGSUNG (DYNAMIC FEATURE VIA WEB3FORMS) */}
         <section id="contact" className="scroll-mt-24">
           <ContactForm />
         </section>
@@ -300,7 +301,7 @@ export default function Home() {
             <div className="flex flex-col gap-1 border-b border-slate-800 pb-4">
               <span className="text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold">03 / Technical Skills</span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Keahlian & Fokus yang Dibangun</h2>
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-slate-300">
                 Teknologi, metodologi, dan standar sistem yang secara konsisten saya pelajari dan terapkan dalam berbagai proyek nyata.
               </p>
             </div>
@@ -316,7 +317,7 @@ export default function Home() {
                     {skillGroup.items.map((item, itemIdx) => (
                       <span
                         key={itemIdx}
-                        className="text-xs font-medium px-2.5 py-1 rounded-lg bg-slate-800/70 border border-slate-700/60 text-slate-300 hover:text-white hover:border-slate-600 transition-colors"
+                        className="text-xs font-medium px-2.5 py-1 rounded-lg bg-slate-800/70 border border-slate-700/60 text-slate-200 hover:text-white hover:border-slate-500 transition-colors"
                       >
                         {item}
                       </span>
@@ -339,7 +340,7 @@ export default function Home() {
                   Placeholder / In Development
                 </span>
               </div>
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-slate-300">
                 Ruang khusus untuk proyek akhir / capstone utama yang sedang dirancang dan dikembangkan.
               </p>
             </div>
@@ -356,14 +357,14 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-slate-100">
                   AI-Driven Telecommunication & Smart Network Optimization
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                   Proyek capstone ini akan mengintegrasikan algoritma model kecerdasan buatan untuk menganalisis performa bandwidth, pendeteksian anomali transmisi sinyal data, serta visualisasi dashboard real-time berbasis Next.js dan Cloudflare Edge.
                 </p>
               </div>
 
-              {/* Progress Milestones Placeholder */}
+              {/* Progress Milestones Placeholder with High Contrast */}
               <div className="w-full max-w-lg grid grid-cols-3 gap-2 pt-3 text-xs">
-                <div className="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-300 font-mono">
+                <div className="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-200 font-mono">
                   <span className="text-[10px] text-emerald-400 block font-bold">FASE 1</span>
                   Riset Konsep
                 </div>
@@ -371,13 +372,13 @@ export default function Home() {
                   <span className="text-[10px] text-amber-400 block font-bold">FASE 2</span>
                   Model & API
                 </div>
-                <div className="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-400 font-mono">
-                  <span className="text-[10px] text-slate-500 block font-bold">FASE 3</span>
+                <div className="p-2.5 rounded-lg bg-slate-900/80 border border-slate-700/80 text-slate-200 font-mono">
+                  <span className="text-[10px] text-cyan-400 block font-bold">FASE 3</span>
                   Deployment
                 </div>
               </div>
 
-              <div className="mt-2 text-xs text-slate-400 flex items-center gap-1.5 font-mono">
+              <div className="mt-2 text-xs text-slate-300 flex items-center gap-1.5 font-mono">
                 <svg className="w-4 h-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -406,7 +407,7 @@ export default function Home() {
                   </svg>
                 </a>
               </div>
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-slate-300">
                 Dokumentasi tulisan, catatan riset, dan analisis seputar AI, web engineering, dan telekomunikasi.
               </p>
             </div>
@@ -415,54 +416,54 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="p-5 rounded-2xl bg-slate-900/40 border border-slate-800/90 flex flex-col justify-between gap-4 group hover:border-rose-500/40 transition-colors">
                 <div className="space-y-2">
-                  <div className="flex items-center justify-between text-[11px] font-mono text-slate-400">
+                  <div className="flex items-center justify-between text-[11px] font-mono text-slate-300">
                     <span>DRAFT ARTICLE #01</span>
                     <span className="text-rose-400">Upcoming</span>
                   </div>
                   <h3 className="text-base font-bold text-slate-200 group-hover:text-rose-300 transition-colors">
                     Membangun Website Cepat & Ramah SEO dengan Next.js App Router
                   </h3>
-                  <p className="text-xs text-slate-400 leading-relaxed">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     Pembahasan mendalam seputar pemisahan layout.tsx, server components, serta alur static export menuju Cloudflare Pages.
                   </p>
                 </div>
-                <div className="text-[11px] font-mono text-slate-400 border-t border-slate-800/80 pt-3">
+                <div className="text-[11px] font-mono text-slate-300 border-t border-slate-800/80 pt-3">
                   Topik: Web Engineering • Deployment
                 </div>
               </div>
 
               <div className="p-5 rounded-2xl bg-slate-900/40 border border-slate-800/90 flex flex-col justify-between gap-4 group hover:border-rose-500/40 transition-colors">
                 <div className="space-y-2">
-                  <div className="flex items-center justify-between text-[11px] font-mono text-slate-400">
+                  <div className="flex items-center justify-between text-[11px] font-mono text-slate-300">
                     <span>DRAFT ARTICLE #02</span>
                     <span className="text-rose-400">Upcoming</span>
                   </div>
                   <h3 className="text-base font-bold text-slate-200 group-hover:text-rose-300 transition-colors">
                     Eksplorasi Generative AI dalam Otomasi Sistem Telekomunikasi
                   </h3>
-                  <p className="text-xs text-slate-400 leading-relaxed">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     Penerapan model Gemini dan LLM inference berlatensi rendah untuk pemrosesan informasi jaringan telekomunikasi.
                   </p>
                 </div>
-                <div className="text-[11px] font-mono text-slate-400 border-t border-slate-800/80 pt-3">
+                <div className="text-[11px] font-mono text-slate-300 border-t border-slate-800/80 pt-3">
                   Topik: Artificial Intelligence • Gemini
                 </div>
               </div>
 
               <div className="p-5 rounded-2xl bg-slate-900/40 border border-slate-800/90 flex flex-col justify-between gap-4 group hover:border-rose-500/40 transition-colors">
                 <div className="space-y-2">
-                  <div className="flex items-center justify-between text-[11px] font-mono text-slate-400">
+                  <div className="flex items-center justify-between text-[11px] font-mono text-slate-300">
                     <span>DRAFT ARTICLE #03</span>
                     <span className="text-rose-400">Upcoming</span>
                   </div>
                   <h3 className="text-base font-bold text-slate-200 group-hover:text-rose-300 transition-colors">
                     Arsitektur Cloud Computing & Standar Kearsipan Digital Nasional
                   </h3>
-                  <p className="text-xs text-slate-400 leading-relaxed">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     Studi kasus dan pembelajaran dari praktik integrasi infrastruktur jaringan simpul arsip nasional.
                   </p>
                 </div>
-                <div className="text-[11px] font-mono text-slate-400 border-t border-slate-800/80 pt-3">
+                <div className="text-[11px] font-mono text-slate-300 border-t border-slate-800/80 pt-3">
                   Topik: Cloud • Simpul Jaringan
                 </div>
               </div>
@@ -474,7 +475,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-slate-800/80 bg-slate-950 mt-12 py-8">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-300">
           <div>
             &copy; {new Date().getFullYear()} <strong>M Rislan Tristansyah</strong>. All rights reserved.
           </div>
