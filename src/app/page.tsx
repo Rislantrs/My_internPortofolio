@@ -5,7 +5,7 @@ export default function Home() {
   const essentialLinks = [
     {
       title: "LinkedIn Profile",
-      description: "Connect with me professionally on LinkedIn for networking and career updates.",
+      description: "Connect with me professionally on LinkedIn for networking, collaboration, and career updates.",
       href: "https://www.linkedin.com/in/m-rislan-tristansyah-96669a294/",
       label: "linkedin.com/in/m-rislan-tristansyah",
       badge: "Professional Network",
@@ -20,7 +20,7 @@ export default function Home() {
     },
     {
       title: "GitHub Repositories",
-      description: "Explore my source code, open-source projects, and technical experiments.",
+      description: "Explore my source code, open-source repositories, and technical experiments.",
       href: "https://github.com/Rislantrs",
       label: "github.com/Rislantrs",
       badge: "Source Code & Projects",
@@ -35,7 +35,7 @@ export default function Home() {
     },
     {
       title: "Curriculum Vitae (CV / Resume)",
-      description: "Download or view my updated academic resume, internship records, and credentials.",
+      description: "Download or view my updated academic resume, internship records, and technical credentials.",
       href: "https://www.rislantrs.me/assets/M%20Rislan%20Tristansyah-resume.pdf",
       label: "M Rislan Tristansyah - Resume.pdf",
       badge: "Official Document",
@@ -67,25 +67,125 @@ export default function Home() {
 
   const secondaryLinks = [
     {
-      title: "Credly Credentials",
+      title: "Credly Verified Badges",
       role: "Google Gemini & Alibaba ACA Certified",
       href: "https://www.credly.com/users/m-rislan-tristansyah",
-      badge: "Verified Badges",
-      iconColor: "text-indigo-400",
+      badge: "Credly Profile",
     },
     {
       title: "Medium Tech Blog",
       role: "AI, Cloud & Networking Articles",
       href: "https://medium.com/@rislantristansyah",
       badge: "@rislantristansyah",
-      iconColor: "text-rose-400",
     },
     {
       title: "Interactive Web Showcase",
       role: "Main Portfolio & 3D Interactive Web",
       href: "https://www.rislantrs.me/",
       badge: "rislantrs.me",
-      iconColor: "text-cyan-400",
+    },
+  ];
+
+  // Selected works pulled directly from user's live rislantrs.me
+  const selectedWorks = [
+    {
+      title: "Website MPK OSIS MAN Purwakarta",
+      category: "Web Engineering & Platform",
+      description:
+        "Portal profil institusi dan platform digitalisasi pemilihan organisasi siswa dengan antarmuka modern, sistem voting transparan, dan basis data terstruktur.",
+      techStack: ["React", "JavaScript", "Tailwind CSS", "REST API"],
+      link: "https://www.rislantrs.me/#projects",
+      badge: "Live Project",
+      accentColor: "border-cyan-500/30 text-cyan-300 bg-cyan-500/10",
+    },
+    {
+      title: "Telco Customer Churn Prediction",
+      category: "Artificial Intelligence & ML",
+      description:
+        "Model prediksi machine learning untuk mendeteksi risiko churn pelanggan pada industri telekomunikasi menggunakan analisis fitur perilaku pengguna.",
+      techStack: ["Python", "Scikit-Learn", "Data Modeling", "Pandas"],
+      link: "https://www.rislantrs.me/#projects",
+      badge: "AI Model",
+      accentColor: "border-indigo-500/30 text-indigo-300 bg-indigo-500/10",
+    },
+    {
+      title: "SDN - Library Network Case Study",
+      category: "Software Defined Networking & Cloud",
+      description:
+        "Arsitektur jaringan Software-Defined Networking untuk infrastruktur arsip digital. Turut mengantarkan raihan Juara 1 Simpul Jaringan Terbaik Nasional saat magang di Dinas Kearsipan.",
+      techStack: ["SDN", "Network Architecture", "Cloud Node", "Linux"],
+      link: "https://www.rislantrs.me/#projects",
+      badge: "National 1st Place Impact",
+      accentColor: "border-emerald-500/30 text-emerald-300 bg-emerald-500/10",
+    },
+    {
+      title: "HEDOM: Heart Rate & Oxygen Monitor",
+      category: "IoT & Telecommunications Hardware",
+      description:
+        "Perangkat prototipe pemantauan biometrik detak jantung dan saturasi oksigen pasien berbasis mikrokontroler dengan transmisi data telemetri nirkabel.",
+      techStack: ["IoT", "Arduino / C++", "Biometric Sensors", "Telemetri"],
+      link: "https://www.rislantrs.me/#projects",
+      badge: "Hardware & IoT",
+      accentColor: "border-rose-500/30 text-rose-300 bg-rose-500/10",
+    },
+    {
+      title: "WEB AJAIB - Interactive Creative Platform",
+      category: "Creative Frontend Engineering",
+      description:
+        "Eksperimen antarmuka web interaktif yang berfokus pada pengalaman pengguna yang dinamis, animasi visual, dan arsitektur komponen modern.",
+      techStack: ["Next.js", "TypeScript", "Tailwind CSS", "CSS Animations"],
+      link: "https://www.rislantrs.me/#projects",
+      badge: "Interactive UI",
+      accentColor: "border-amber-500/30 text-amber-300 bg-amber-500/10",
+    },
+    {
+      title: "AI Sentiment Analysis - Lexicon Based",
+      category: "Natural Language Processing (NLP)",
+      description:
+        "Sistem analisis sentimen berbasis leksikon untuk mengklasifikasikan opini publik dan tanggapan teks secara otomatis dan berlatensi rendah.",
+      techStack: ["Python", "NLP", "Lexicon", "Machine Learning"],
+      link: "https://www.rislantrs.me/#projects",
+      badge: "NLP Tool",
+      accentColor: "border-sky-500/30 text-sky-300 bg-sky-500/10",
+    },
+  ];
+
+  // Official verified credentials from user's live rislantrs.me
+  const earnedCredentials = [
+    {
+      title: "Gemini Certified — Generative AI",
+      issuer: "Google",
+      badgeText: "Google Certified",
+      accent: "text-cyan-300 border-cyan-500/30 bg-cyan-500/10",
+      link: "https://www.credly.com/users/m-rislan-tristansyah",
+    },
+    {
+      title: "ACA Cloud Computing Certification",
+      issuer: "Alibaba Cloud",
+      badgeText: "Alibaba Cloud",
+      accent: "text-orange-300 border-orange-500/30 bg-orange-500/10",
+      link: "https://www.credly.com/users/m-rislan-tristansyah",
+    },
+    {
+      title: "HTML, CSS, and Javascript for Web Developers",
+      issuer: "Johns Hopkins University",
+      badgeText: "Verified Credential",
+      accent: "text-emerald-300 border-emerald-500/30 bg-emerald-500/10",
+      link: "https://coursera.org/verify/QJNY8CPX7QZ2",
+    },
+    {
+      title: "Google Cloud Computing Foundation",
+      issuer: "Google Cloud",
+      badgeText: "Google Cloud",
+      accent: "text-sky-300 border-sky-500/30 bg-sky-500/10",
+      link: "https://www.credly.com/users/m-rislan-tristansyah",
+    },
+    {
+      title: "Machine Learning Certification",
+      issuer: "Stanford / Coursera",
+      badgeText: "AI & ML",
+      accent: "text-indigo-300 border-indigo-500/30 bg-indigo-500/10",
+      link: "https://www.rislantrs.me/#skills",
     },
   ];
 
@@ -104,7 +204,7 @@ export default function Home() {
     },
     {
       category: "Telecommunications & Networking",
-      items: ["Network Architecture", "Routing & Switching", "IoT Protocols", "Wireless Systems", "Kearsipan Digital"],
+      items: ["Network Architecture", "Software-Defined Networking (SDN)", "IoT Protocols", "Wireless Systems", "Kearsipan Digital"],
     },
   ];
 
@@ -127,11 +227,10 @@ export default function Home() {
 
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
             <a href="#profile" className="hover:text-white transition-colors">Profil</a>
-            <a href="#links" className="hover:text-white transition-colors">Tautan Penting</a>
+            <a href="#projects" className="hover:text-white transition-colors">Karya & Proyek</a>
+            <a href="#credentials" className="hover:text-white transition-colors">Sertifikasi</a>
             <a href="#contact" className="hover:text-white transition-colors">Kirim Pesan</a>
-            <a href="#skills" className="hover:text-white transition-colors">Keahlian</a>
             <a href="#capstone" className="hover:text-white transition-colors">Capstone</a>
-            <a href="#articles" className="hover:text-white transition-colors">Artikel</a>
           </nav>
 
           <a
@@ -152,48 +251,76 @@ export default function Home() {
       {/* Main Single-Page Content */}
       <main className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16 flex flex-col gap-20">
         
-        {/* 1. HERO & PROFIL SINGKAT */}
+        {/* 1. HERO & PROOF STATEMENT (PROOF OF EXPERTISE) */}
         <section id="profile" className="pt-4 scroll-mt-24">
           <div className="p-6 sm:p-10 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-sm shadow-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-bl from-cyan-500/10 via-transparent to-transparent pointer-events-none"></div>
 
             <div className="flex flex-col gap-6">
-              {/* Availability Badge */}
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold w-fit">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span>Open for Internship, Collaboration & Research</span>
+              {/* Availability & Role Focus */}
+              <div className="flex flex-wrap items-center gap-2">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold w-fit">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span>Available for Thoughtful Builds & Internship</span>
+                </div>
+                <span className="text-xs px-2.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 font-mono">
+                  Purwakarta, Indonesia
+                </span>
               </div>
 
-              {/* Title & Introduction */}
+              {/* Title & Explicit Proof Statement */}
               <div className="space-y-3">
                 <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
                   M Rislan Tristansyah
                 </h1>
-                <p className="text-lg sm:text-xl font-medium text-cyan-400">
-                  Creative Developer & AI Enthusiast • Telecommunication Systems Student
+                <p className="text-lg sm:text-xl font-bold text-cyan-400">
+                  Full-Stack Web Developer & AI Solutions Builder
                 </p>
                 <p className="text-sm sm:text-base text-slate-300">
-                  Universitas Pendidikan Indonesia (UPI) • Semester 7
+                  Mahasiswa Sistem Telekomunikasi (Semester 7) • Universitas Pendidikan Indonesia (UPI)
                 </p>
               </div>
 
-              {/* Bio Description */}
-              <div className="text-slate-200 text-sm sm:text-base leading-relaxed max-w-3xl space-y-3 border-t border-slate-800/80 pt-5">
-                <p>
-                  Saya adalah mahasiswa tingkat akhir di program studi <strong>Sistem Telekomunikasi, Universitas Pendidikan Indonesia</strong> dengan fokus riset dan ketertarikan mendalam pada bidang <strong>Kecerdasan Buatan (Artificial Intelligence)</strong>, jaringan komputasi awan (Cloud Computing), serta pengembangan aplikasi web modern yang bersih dan efisien.
-                </p>
-                <p>
-                  Memiliki pengalaman magang di <strong>Dinas Kearsipan dan Perpustakaan (Bidang P3K)</strong> yang berkontribusi dalam pencapaian <em>Juara 1 Simpul Jaringan Terbaik Nasional</em>, serta aktif di kepengurusan himpunan <strong>HMST</strong> departemen profesi & kejuruan.
-                </p>
+              {/* High-Impact Proof Statement Quote from rislantrs.me */}
+              <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-800 text-slate-200 text-sm sm:text-base italic leading-relaxed border-l-4 border-l-cyan-400">
+                &ldquo;I believe life is about constantly growing, becoming better than yesterday, appreciating today, and looking forward to tomorrow with hope. Saya merancang dan membangun platform digital interaktif, arsitektur jaringan cerdas, dan aplikasi berbasis kecerdasan buatan (AI) yang bersih, efisien, dan berdampak nyata.&rdquo;
               </div>
 
-              {/* Quick Action Badges */}
+              {/* Proven Highlights Strip */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+                <div className="p-3 rounded-xl bg-slate-950/50 border border-slate-800/80">
+                  <p className="text-xs font-bold text-amber-400 flex items-center gap-1.5">
+                    <span>🏆</span> Juara 1 Simpul Jaringan
+                  </p>
+                  <p className="text-[11px] text-slate-300 mt-0.5">
+                    Terbaik Nasional (Magang Dinas Arsip & Perpustakaan Purwakarta).
+                  </p>
+                </div>
+                <div className="p-3 rounded-xl bg-slate-950/50 border border-slate-800/80">
+                  <p className="text-xs font-bold text-emerald-400 flex items-center gap-1.5">
+                    <span>🎓</span> 5+ Kredensial Resmi
+                  </p>
+                  <p className="text-[11px] text-slate-300 mt-0.5">
+                    Google Gemini, Alibaba Cloud ACA, & Johns Hopkins University.
+                  </p>
+                </div>
+                <div className="p-3 rounded-xl bg-slate-950/50 border border-slate-800/80">
+                  <p className="text-xs font-bold text-cyan-400 flex items-center gap-1.5">
+                    <span>💻</span> 8+ Proyek Selesai
+                  </p>
+                  <p className="text-[11px] text-slate-300 mt-0.5">
+                    Implementasi nyata web, machine learning, IoT & arsitektur jaringan.
+                  </p>
+                </div>
+              </div>
+
+              {/* Quick Action Buttons */}
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <a
-                  href="#links"
-                  className="px-4 py-2 rounded-xl bg-cyan-500 text-slate-950 font-bold text-sm hover:bg-cyan-400 transition-colors shadow-lg shadow-cyan-500/20 inline-flex items-center gap-2"
+                  href="#projects"
+                  className="px-5 py-2.5 rounded-xl bg-cyan-500 text-slate-950 font-bold text-sm hover:bg-cyan-400 transition-colors shadow-lg shadow-cyan-500/20 inline-flex items-center gap-2"
                 >
-                  <span>Lihat Tautan & Kontak</span>
+                  <span>Lihat Bukti Karya Nyata</span>
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
@@ -202,26 +329,154 @@ export default function Home() {
                   href="https://www.rislantrs.me/assets/M%20Rislan%20Tristansyah-resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-slate-100 font-semibold text-sm border border-slate-700 transition-colors inline-flex items-center gap-2"
+                  className="px-4 py-2.5 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-slate-100 font-semibold text-sm border border-slate-700 transition-colors inline-flex items-center gap-2"
                 >
                   <svg className="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                   <span>Unduh CV Lengkap</span>
                 </a>
+                <a
+                  href="#contact"
+                  className="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold text-sm border border-slate-700 transition-colors inline-flex items-center gap-2"
+                >
+                  <span>Kirim Pesan Langsung</span>
+                </a>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 2. TAUTAN PENTING (ESSENTIAL LINKS HUB) */}
+        {/* 2. SELECTED WORKS / KARYA NYATA (BUKTI KEPAKARAN) */}
+        <section id="projects" className="scroll-mt-24">
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-1 border-b border-slate-800 pb-4">
+              <span className="text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold">01 / Proof of Work</span>
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Karya Nyata yang Telah Dibangun</h2>
+                <a
+                  href="https://www.rislantrs.me/#projects"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-slate-200 hover:text-cyan-300 transition-colors flex items-center gap-1"
+                >
+                  <span>Lihat di rislantrs.me</span>
+                  <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+              <p className="text-sm text-slate-300">
+                Koleksi proyek nyata yang membuktikan penerapan praktis dalam rekayasa web, model kecerdasan buatan, IoT, dan arsitektur jaringan.
+              </p>
+            </div>
+
+            {/* Real Projects Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {selectedWorks.map((work, idx) => (
+                <div
+                  key={idx}
+                  className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-slate-700 transition-all flex flex-col justify-between gap-4 group"
+                >
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="text-[11px] font-mono text-cyan-400 uppercase tracking-wider">
+                        {work.category}
+                      </span>
+                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${work.accentColor}`}>
+                        {work.badge}
+                      </span>
+                    </div>
+
+                    <h3 className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">
+                      {work.title}
+                    </h3>
+
+                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                      {work.description}
+                    </p>
+                  </div>
+
+                  <div className="space-y-3 pt-2 border-t border-slate-800/80">
+                    <div className="flex flex-wrap gap-1.5">
+                      {work.techStack.map((tech, techIdx) => (
+                        <span
+                          key={techIdx}
+                          className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+
+                    <a
+                      href={work.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors"
+                    >
+                      <span>Lihat Detail Studi Kasus</span>
+                      <svg className="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 3. EARNED CREDENTIALS / SERTIFIKASI RESMI */}
+        <section id="credentials" className="scroll-mt-24">
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-1 border-b border-slate-800 pb-4">
+              <span className="text-indigo-400 font-mono text-xs uppercase tracking-wider font-semibold">02 / Verified Credentials</span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Sertifikasi & Kredensial Resmi</h2>
+              <p className="text-sm text-slate-300">
+                Pengakuan kompetensi dari institusi teknologi global (Google, Alibaba Cloud, Stanford, dan Johns Hopkins).
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              {earnedCredentials.map((cred, idx) => (
+                <a
+                  key={idx}
+                  href={cred.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-5 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-indigo-500/40 transition-all flex flex-col justify-between gap-3 group"
+                >
+                  <div className="space-y-2">
+                    <span className={`text-[10px] font-mono px-2 py-0.5 rounded-full border w-fit block font-semibold ${cred.accent}`}>
+                      {cred.badgeText}
+                    </span>
+                    <h3 className="text-sm font-bold text-slate-100 group-hover:text-indigo-300 transition-colors">
+                      {cred.title}
+                    </h3>
+                    <p className="text-xs text-slate-400">Penerbit: {cred.issuer}</p>
+                  </div>
+
+                  <span className="text-[11px] font-semibold text-cyan-400 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
+                    <span>Verifikasi Kredensial</span>
+                    <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 4. TAUTAN PENTING & HUB */}
         <section id="links" className="scroll-mt-24">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1 border-b border-slate-800 pb-4">
-              <span className="text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold">01 / Connection Hub</span>
+              <span className="text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold">03 / Connection Hub</span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Tautan Penting & Kontak</h2>
               <p className="text-sm text-slate-300">
-                Pintu masuk utama untuk melihat rekam jejak profesional, kode sumber, dokumen kurikulum vitae, dan jadwal konsultasi.
+                Pintu masuk utama untuk melihat rekam jejak profesional, repositori GitHub, resume CV, dan jadwal temu virtual.
               </p>
             </div>
 
@@ -290,19 +545,19 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 2B. KIRIM PESAN LANGSUNG (DYNAMIC FEATURE VIA WEB3FORMS) */}
+        {/* 5. FORMULIR KONTAK AKTIF (DYNAMIC WORKING FEATURE) */}
         <section id="contact" className="scroll-mt-24">
           <ContactForm />
         </section>
 
-        {/* 3. KEAHLIAN & FOKUS TEKNOLOGI */}
+        {/* 6. KEAHLIAN & TECH STACK */}
         <section id="skills" className="scroll-mt-24">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1 border-b border-slate-800 pb-4">
-              <span className="text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold">03 / Technical Skills</span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Keahlian & Fokus yang Dibangun</h2>
+              <span className="text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold">04 / Core Systems</span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Keahlian & Fokus Teknologi</h2>
               <p className="text-sm text-slate-300">
-                Teknologi, metodologi, dan standar sistem yang secara konsisten saya pelajari dan terapkan dalam berbagai proyek nyata.
+                Peralatan kerja dan metodologi yang secara konsisten saya gunakan dalam membangun solusi digital.
               </p>
             </div>
 
@@ -329,23 +584,22 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 4. RUANG KOSONG / PLACEHOLDER CAPSTONE PROJECT */}
+        {/* 7. PROYEK MASA DEPAN (CAPSTONE PROJECT ROADMAP) */}
         <section id="capstone" className="scroll-mt-24">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1 border-b border-slate-800 pb-4">
-              <span className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold">04 / Future Project</span>
+              <span className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold">05 / Future Capstone</span>
               <div className="flex items-center justify-between flex-wrap gap-2">
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Proyek Masa Depan (Capstone Project)</h2>
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Proyek Akhir / Capstone Research</h2>
                 <span className="text-xs px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 font-medium">
-                  Placeholder / In Development
+                  Riset Aktif & Pengembangan
                 </span>
               </div>
               <p className="text-sm text-slate-300">
-                Ruang khusus untuk proyek akhir / capstone utama yang sedang dirancang dan dikembangkan.
+                Riset proyek akhir yang menggabungkan transmisi telekomunikasi dengan model kecerdasan buatan.
               </p>
             </div>
 
-            {/* Capstone Placeholder Container */}
             <div className="p-6 sm:p-8 rounded-2xl border-2 border-dashed border-slate-800 bg-slate-900/30 text-center flex flex-col items-center justify-center gap-4 relative overflow-hidden group hover:border-amber-500/40 transition-colors">
               <div className="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-1">
                 <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
@@ -358,11 +612,10 @@ export default function Home() {
                   AI-Driven Telecommunication & Smart Network Optimization
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  Proyek capstone ini akan mengintegrasikan algoritma model kecerdasan buatan untuk menganalisis performa bandwidth, pendeteksian anomali transmisi sinyal data, serta visualisasi dashboard real-time berbasis Next.js dan Cloudflare Edge.
+                  Proyek capstone ini mengintegrasikan algoritma machine learning untuk analisis performa bandwidth, pendeteksian anomali transmisi sinyal data, serta visualisasi dashboard real-time berbasis Next.js dan Cloudflare Edge.
                 </p>
               </div>
 
-              {/* Progress Milestones Placeholder with High Contrast */}
               <div className="w-full max-w-lg grid grid-cols-3 gap-2 pt-3 text-xs">
                 <div className="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-200 font-mono">
                   <span className="text-[10px] text-emerald-400 block font-bold">FASE 1</span>
@@ -383,89 +636,6 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span>Dokumentasi dan live demo repositori akan ditautkan di sini setelah pengujian selesai.</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 5. RUANG KOSONG / PLACEHOLDER ARTIKEL & TULISAN */}
-        <section id="articles" className="scroll-mt-24">
-          <div className="flex flex-col gap-6">
-            <div className="flex flex-col gap-1 border-b border-slate-800 pb-4">
-              <span className="text-rose-400 font-mono text-xs uppercase tracking-wider font-semibold">05 / Writings & Publications</span>
-              <div className="flex items-center justify-between flex-wrap gap-2">
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Artikel & Tulisan Teknis</h2>
-                <a
-                  href="https://medium.com/@rislantristansyah"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/20 text-rose-300 font-medium hover:bg-rose-500/20 transition-colors flex items-center gap-1"
-                >
-                  <span>Medium Profile</span>
-                  <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-              <p className="text-sm text-slate-300">
-                Dokumentasi tulisan, catatan riset, dan analisis seputar AI, web engineering, dan telekomunikasi.
-              </p>
-            </div>
-
-            {/* Articles Placeholders Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-5 rounded-2xl bg-slate-900/40 border border-slate-800/90 flex flex-col justify-between gap-4 group hover:border-rose-500/40 transition-colors">
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between text-[11px] font-mono text-slate-300">
-                    <span>DRAFT ARTICLE #01</span>
-                    <span className="text-rose-400">Upcoming</span>
-                  </div>
-                  <h3 className="text-base font-bold text-slate-200 group-hover:text-rose-300 transition-colors">
-                    Membangun Website Cepat & Ramah SEO dengan Next.js App Router
-                  </h3>
-                  <p className="text-xs text-slate-300 leading-relaxed">
-                    Pembahasan mendalam seputar pemisahan layout.tsx, server components, serta alur static export menuju Cloudflare Pages.
-                  </p>
-                </div>
-                <div className="text-[11px] font-mono text-slate-300 border-t border-slate-800/80 pt-3">
-                  Topik: Web Engineering • Deployment
-                </div>
-              </div>
-
-              <div className="p-5 rounded-2xl bg-slate-900/40 border border-slate-800/90 flex flex-col justify-between gap-4 group hover:border-rose-500/40 transition-colors">
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between text-[11px] font-mono text-slate-300">
-                    <span>DRAFT ARTICLE #02</span>
-                    <span className="text-rose-400">Upcoming</span>
-                  </div>
-                  <h3 className="text-base font-bold text-slate-200 group-hover:text-rose-300 transition-colors">
-                    Eksplorasi Generative AI dalam Otomasi Sistem Telekomunikasi
-                  </h3>
-                  <p className="text-xs text-slate-300 leading-relaxed">
-                    Penerapan model Gemini dan LLM inference berlatensi rendah untuk pemrosesan informasi jaringan telekomunikasi.
-                  </p>
-                </div>
-                <div className="text-[11px] font-mono text-slate-300 border-t border-slate-800/80 pt-3">
-                  Topik: Artificial Intelligence • Gemini
-                </div>
-              </div>
-
-              <div className="p-5 rounded-2xl bg-slate-900/40 border border-slate-800/90 flex flex-col justify-between gap-4 group hover:border-rose-500/40 transition-colors">
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between text-[11px] font-mono text-slate-300">
-                    <span>DRAFT ARTICLE #03</span>
-                    <span className="text-rose-400">Upcoming</span>
-                  </div>
-                  <h3 className="text-base font-bold text-slate-200 group-hover:text-rose-300 transition-colors">
-                    Arsitektur Cloud Computing & Standar Kearsipan Digital Nasional
-                  </h3>
-                  <p className="text-xs text-slate-300 leading-relaxed">
-                    Studi kasus dan pembelajaran dari praktik integrasi infrastruktur jaringan simpul arsip nasional.
-                  </p>
-                </div>
-                <div className="text-[11px] font-mono text-slate-300 border-t border-slate-800/80 pt-3">
-                  Topik: Cloud • Simpul Jaringan
-                </div>
               </div>
             </div>
           </div>
