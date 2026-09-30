@@ -616,7 +616,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="w-full max-w-lg grid grid-cols-3 gap-2 pt-3 text-xs">
+              <div className="w-full max-w-lg grid grid-cols-1 sm:grid-cols-3 gap-2 pt-3 text-xs">
                 <div className="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-200 font-mono">
                   <span className="text-[10px] text-emerald-400 block font-bold">FASE 1</span>
                   Riset Konsep
