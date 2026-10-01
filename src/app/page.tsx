@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
@@ -584,58 +585,86 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 7. PROYEK MASA DEPAN (CAPSTONE PROJECT ROADMAP) */}
+        {/* 7. CAPSTONE PROJECT RESEARCH (SEARCH INTELLIGENCE & REFRESH ENGINE) */}
         <section id="capstone" className="scroll-mt-24">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1 border-b border-slate-800 pb-4">
-              <span className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold">05 / Future Capstone</span>
+              <span className="text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold">05 / Deployed Capstone Research</span>
               <div className="flex items-center justify-between flex-wrap gap-2">
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Proyek Akhir / Capstone Research</h2>
-                <span className="text-xs px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 font-medium">
-                  Riset Aktif & Pengembangan
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Search Intelligence Capstone Research</h2>
+                <span className="text-xs px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 font-semibold flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  Validated &amp; Live Deployed
                 </span>
               </div>
               <p className="text-sm text-slate-300">
-                Riset proyek akhir yang menggabungkan transmisi telekomunikasi dengan model kecerdasan buatan.
+                Riset Machine Learning prediktif untuk mendeteksi pembusukan trafik konten (*content decay*) dan degradasi peringkat Google SERP, berbasis data riil FlyRank.
               </p>
             </div>
 
-            <div className="p-6 sm:p-8 rounded-2xl border-2 border-dashed border-slate-800 bg-slate-900/30 text-center flex flex-col items-center justify-center gap-4 relative overflow-hidden group hover:border-amber-500/40 transition-colors">
-              <div className="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-1">
-                <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                </svg>
-              </div>
+            <div className="p-6 sm:p-8 rounded-2xl border border-cyan-500/30 bg-slate-900/60 shadow-xl backdrop-blur-sm relative overflow-hidden group hover:border-cyan-400/50 transition-all">
+              <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-bl from-cyan-500/10 via-transparent to-transparent pointer-events-none"></div>
 
-              <div className="max-w-xl space-y-2">
-                <h3 className="text-xl font-bold text-slate-100">
-                  AI-Driven Telecommunication & Smart Network Optimization
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  Proyek capstone ini mengintegrasikan algoritma machine learning untuk analisis performa bandwidth, pendeteksian anomali transmisi sinyal data, serta visualisasi dashboard real-time berbasis Next.js dan Cloudflare Edge.
-                </p>
-              </div>
+              <div className="flex flex-col gap-5">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-xs font-mono px-2.5 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-bold">
+                    FlyRank ML Internship
+                  </span>
+                  <span className="text-xs font-mono px-2.5 py-0.5 rounded bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-bold">
+                    Lane 2: Refresh Opportunity Scoring
+                  </span>
+                  <span className="text-xs font-mono px-2.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-300">
+                    ROC-AUC 0.842
+                  </span>
+                </div>
 
-              <div className="w-full max-w-lg grid grid-cols-1 sm:grid-cols-3 gap-2 pt-3 text-xs">
-                <div className="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-200 font-mono">
-                  <span className="text-[10px] text-emerald-400 block font-bold">FASE 1</span>
-                  Riset Konsep
+                <div className="space-y-2">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                    Predictive Content Decay Modeling &amp; Ranking Position Drift Engine
+                  </h3>
+                  <p className="text-sm text-slate-300 leading-relaxed max-w-3xl">
+                    Sistem machine learning prediktif anti-leakage yang meramalkan penurunan laju klik dan pergeseran peringkat kata kunci 14 hari sebelumnya. Model ini secara otomatis mengelompokkan konten ke dalam <em>Action Tiers</em> (P1 Critical Refresh, P2 Monitor Position, P3 Stable Performer) lengkap dengan kode diagnosis (<em>reason codes</em>) untuk memandu sprint editorial tim konten.
+                  </p>
                 </div>
-                <div className="p-2.5 rounded-lg bg-slate-900/80 border border-amber-500/30 text-amber-300 font-mono">
-                  <span className="text-[10px] text-amber-400 block font-bold">FASE 2</span>
-                  Model & API
-                </div>
-                <div className="p-2.5 rounded-lg bg-slate-900/80 border border-slate-700/80 text-slate-200 font-mono">
-                  <span className="text-[10px] text-cyan-400 block font-bold">FASE 3</span>
-                  Deployment
-                </div>
-              </div>
 
-              <div className="mt-2 text-xs text-slate-300 flex items-center gap-1.5 font-mono">
-                <svg className="w-4 h-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span>Dokumentasi dan live demo repositori akan ditautkan di sini setelah pengujian selesai.</span>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 text-xs">
+                  <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800">
+                    <span className="text-[10px] text-cyan-400 block font-mono font-bold">FITUR ANTI-LEAKAGE</span>
+                    Click Velocity Ratio, SERP Drift, &amp; Trailing CTR dengan lag <code>shift(1)</code>.
+                  </div>
+                  <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800">
+                    <span className="text-[10px] text-emerald-400 block font-mono font-bold">AKURASI MODEL</span>
+                    Random Forest Classifier mengungguli baseline heuristik (93.8% Accuracy &amp; 98.2% Precision).
+                  </div>
+                  <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800">
+                    <span className="text-[10px] text-amber-400 block font-mono font-bold">OUTPUT AKSI</span>
+                    Ranked Playbook dengan 3.129 artikel prioritas darurat (P1) teridentifikasi.
+                  </div>
+                </div>
+
+                <div className="pt-2 flex flex-wrap items-center gap-3">
+                  <Link
+                    href="/capstone"
+                    className="px-5 py-2.5 rounded-xl bg-cyan-500 text-slate-950 font-bold text-sm hover:bg-cyan-400 transition-colors shadow-lg shadow-cyan-500/20 inline-flex items-center gap-2"
+                  >
+                    <span>Baca Deployed Research Paper</span>
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </Link>
+
+                  <a
+                    href="https://github.com/Rislantrs/flyrank-ml-internship"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-sm border border-slate-700 transition-colors inline-flex items-center gap-2"
+                  >
+                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                    </svg>
+                    <span>Buka Repositori GitHub</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
